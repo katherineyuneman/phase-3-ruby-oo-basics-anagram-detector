@@ -7,8 +7,7 @@ class Anagram
 
     def match(array)
 
-        map = array.map { |element| element }
-        filter = map.select {|letters| letters.chars.sort == @word.chars.sort}
+        array.map { |element| element }.select {|letters| letters.chars.sort == @word.chars.sort}
 
     end
 end
